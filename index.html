@@ -13,6 +13,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERROR&#12484;SD</title>
     <style>
+        .box1 video{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            object-fit:cover;
+            width: 100%;
+            height: 190%;
+        }
         #box {
             background-color: white;
             color: black;
@@ -39,17 +48,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        body::before {
-            background: url("https://media.istockphoto.com/photos/neon-lights-lens-flare-space-light-black-background-picture-id1136854470?b=1&k=20&m=1136854470&s=170667a&w=0&h=Y8CpObEjhgKJw3szfU4-Mi1qTpJIYN8omYS36173ah8=") no-repeat center center/cover;
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 160%;
-            top: 0px;
-            left: 0px;
-            z-index: -1;
         }
 
         footer img {
@@ -118,9 +116,11 @@
 
         img[alt="My Photo"] {
             width: 195px;
-            height: 360px;
+            height: 200px;
+            border-radius: 100%;
+            box-shadow: 0px 0px 7px 1px black;
             float: right;
-            margin-top: -400px;
+            margin-top: -300px;
             margin-left: 90px;
         }
 
@@ -242,16 +242,11 @@
 
         @media (max-width:1250px) and (min-width:800px) {
 
-            body::before {
-                background: url("https://media.istockphoto.com/photos/neon-lights-lens-flare-space-light-black-background-picture-id1136854470?b=1&k=20&m=1136854470&s=170667a&w=0&h=Y8CpObEjhgKJw3szfU4-Mi1qTpJIYN8omYS36173ah8=") no-repeat center center/cover;
-                height: 180%;
-            }
-
             #box {
                 max-width: 600px;
                 height: 400px;
                 border-radius: 50px;
-                box-shadow: 0px 0px 44px 15px black;
+                box-shadow: 0px 0px 44px 15px white;
                 margin: -700px auto;
             }
 
@@ -311,9 +306,9 @@
             }
 
             img[alt="My Photo"] {
-                width: 110px;
-                height: 215px;
-                margin-top: -240px;
+                width: 130px;
+                height: 145px;
+                margin-top: -220px;
             }
 
             .aboutme span {
@@ -349,7 +344,7 @@
                 height: 215px;
                 margin: -600px auto;
                 border-radius: 40px;
-                box-shadow: 0px 0px 44px 15px black;
+                box-shadow: 0px 0px 44px 15px white;
             }
 
             .typing-effect {
@@ -363,17 +358,6 @@
                 padding-left: 1px;
                 padding-right: 5px;
                 top: 2px;
-            }
-
-            body::before {
-                background: url("https://media.istockphoto.com/photos/neon-lights-lens-flare-space-light-black-background-picture-id1136854470?b=1&k=20&m=1136854470&s=170667a&w=0&h=Y8CpObEjhgKJw3szfU4-Mi1qTpJIYN8omYS36173ah8=") no-repeat center center/cover;
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 130%;
-                top: 0px;
-                left: 0px;
-                z-index: -1;
             }
 
             .box {
@@ -421,8 +405,8 @@
             }
 
             img[alt="My Photo"] {
-                width: 50px;
-                height: 92px;
+                width: 70px;
+                height: 82px;
                 margin-top: -110px;
             }
 
@@ -491,11 +475,6 @@
                 font-size: 9px;
             }
 
-            body::before {
-                background: url("https://media.istockphoto.com/photos/neon-lights-lens-flare-space-light-black-background-picture-id1136854470?b=1&k=20&m=1136854470&s=170667a&w=0&h=Y8CpObEjhgKJw3szfU4-Mi1qTpJIYN8omYS36173ah8=") no-repeat fixed center/cover;
-                height: 120%;
-            }
-
             .end {
                 font-size: 10px;
             }
@@ -517,7 +496,7 @@
 
             img[alt="My Photo"] {
                 width: 50px;
-                height: 92px;
+                height: 62px;
                 margin-top: -115px;
             }
 
@@ -569,7 +548,11 @@
 </head>
 
 <body>
-
+    
+    <section class="box1">
+        <video src="vid.mp4" autoplay loop muted></video>
+    </section>
+    
     <div class="top">
         <label id="menu"><i class='bx bx-menu'></i> </label>
         <b> <img src="error.jpg" alt="My Logo"> &nbsp; <u>DEVELOPER</u> &nbsp; <img src="error.jpg" alt="My Logo">
@@ -634,7 +617,7 @@
                     </span>
                 </div>
                 <hr>
-                <div class="myimg" onclick="Myvoic()"><img src="sud.jpeg" alt="My Photo"></div>
+                <div class="myimg" onclick="Myvoic()"><img src="https://media.licdn.com/dms/image/D4D03AQHSc3aPAeknnw/profile-displayphoto-shrink_400_400/0/1683316257703?e=1690416000&v=beta&t=ufyLB-XmIX2wkuzyTLDi4bc71PAUyxVro1Fyb0UBD5o" alt="My Photo"></div>
             </div>
 
             <div class="socialmedia">
@@ -649,7 +632,7 @@
                     </li>
 
 
-                    <li><a href="https://instagram.com/indian_sudhxnshu?utm_medium=copy_link">
+                    <li><a href="https://instagram.com/tech_tank08?utm_medium=copy_link">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
                                 class="media">
                         </a></li>
